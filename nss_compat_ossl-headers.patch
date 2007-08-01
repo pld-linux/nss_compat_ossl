@@ -1,0 +1,27 @@
+--- nss_compat_ossl-0.9.1/src/nss_compat_ossl.h.orig	2007-05-11 23:25:00.000000000 +0200
++++ nss_compat_ossl-0.9.1/src/nss_compat_ossl.h	2007-08-01 21:51:20.582760620 +0200
+@@ -22,11 +22,11 @@
+ #undef HAVE_OPENSSL
+ #undef HAVE_OSSL_ENGINE_H
+ 
+-#include <nspr4/nspr.h>
++#include <nspr/nspr.h>
+ #include <nss.h>
+ #include <pk11pub.h>
+ #include <sechash.h>
+-#include <nss3/ssl.h>
++#include <nss/ssl.h>
+ #include <base64.h>
+ #include <keyhi.h>
+ #include <sslproto.h>
+--- nss_compat_ossl-0.9.1/src/ssl.c.orig	2007-05-30 00:00:19.000000000 +0200
++++ nss_compat_ossl-0.9.1/src/ssl.c	2007-08-01 21:51:33.323486673 +0200
+@@ -19,7 +19,7 @@
+ #include <unistd.h>
+ #include <stdio.h>
+ #include "nss_compat_ossl.h"
+-#include <nss3/secder.h>
++#include <nss/secder.h>
+ #include <secmod.h>
+ #include <termios.h> /* for echo on/off */
+ #include <sys/stat.h>
