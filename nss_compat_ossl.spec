@@ -1,12 +1,12 @@
 Summary:	Source-level compatibility library for OpenSSL to NSS porting
 Summary(pl.UTF-8):	Biblioteka kompatybilności do portowania z OpenSSL-a do NSS
 Name:		nss_compat_ossl
-Version:	0.9.1
-Release:	3
+Version:	0.9.2
+Release:	1
 License:	LGPL v2.1+
 Group:		Libraries
 Source0:	http://directory.fedoraproject.org/sources/%{name}-%{version}.tar.gz
-# Source0-md5:	765c1426fc61b5c67c17fca0a87405cb
+# Source0-md5:	84ceb6df62872f8c6df3f2f5657425e6
 Patch0:		%{name}-headers.patch
 BuildRequires:	nspr-devel >= 4
 BuildRequires:	nss-devel >= 3
